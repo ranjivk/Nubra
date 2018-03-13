@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%include ./partials/head %>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  <header>
+    <% include ./partials/header %>
+  </header>
+  <main>
+    <div class="jumbotron">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="/images/img01.jpg" alt="agility">
+            <div class="caption">
+              <h3>Building Agility</h3>
+              <p>
+                  This program builds capacities to rapidly change
+                   or adapt in response to changes in the market.
+                    Organizational agility can help a company adapt
+                     proactively and successfully to the emergence
+                      of new competitors, the development of new
+                       industry-changing technologies, or shifts
+                        market conditions. 
+              </p>
+              <p><a href="#" class="btn btn-primary" role="button">More...</a> <a href="#" class="btn btn-default" role="button">Signup</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="/images/img02.jpg" alt="resilience">
+              <div class="caption">
+                <h3>Enhancing Resilience</h3>
+                <p>
+                    Resilience is embedded in culture. Building on
+                     agile the focus is on the ability to collaborate
+                      effectively in order to generate new value.
+                       Leaders shift their attention from incrementally
+                        optimizing the efficiency of known, stable
+                         arrangements to addressing unknown and
+                          unknowable factors.
+                </p>
+                <p><a href="#" class="btn btn-primary" role="button">More...</a> <a href="#" class="btn btn-default" role="button">Signup</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="/images/img03.jpg" alt="growth">
+                <div class="caption">
+                  <h3>Delivering Growth</h3>
+                  <p>
+                      The question is not whether we are doing
+                       business right, but whether are we in the
+                        right business. While the challenge of
+                         maintaining optimal levels of threshold
+                          and differentiating skills remain, the
+                           focus shifts to determining emergent
+                            business and building a future workforce
+                             with emerging skills.
+                  </p>
+                  <p><a href="#" class="btn btn-primary" role="button">More...</a> <a href="#" class="btn btn-default" role="button">Signup</a></p>
+                </div>
+              </div>
+            </div>
+      </div>
+  </main>
+  <footer>
+    <% include ./partials/footer %>
+  </footer>
 </html>
